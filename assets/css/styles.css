@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-.content {
+.container {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
@@ -49,7 +49,8 @@ a {
 }
 
 .btn.btn--text:hover {
-  opacity: 0.8;
+  color: var(--primary-color);
+  /* opacity: 0.8; */
 }
 
 .btn.btn--outline {
@@ -64,14 +65,28 @@ a {
 
 /* ====== Header ====== */
 .header {
-  padding-top: 24px;
+  background-color: #ffffff;
+}
+
+.header.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__body {
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
 .header__navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 0;
 }
 
 .navbar__logo {
@@ -82,14 +97,16 @@ a {
 .navbar__menu {
   display: flex;
   align-items: center;
-  gap: 39px;
 }
 
 .navbar__menu-item a {
+  display: inline-block;
   color: #2f3a3b;
   font-size: 1.6rem;
   font-weight: 400;
+  padding: 8px 20px;
 }
+
 .navbar__menu-item a::before {
   content: attr(title);
   display: block;
