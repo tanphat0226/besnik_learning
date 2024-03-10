@@ -33,18 +33,22 @@ a {
 }
 
 .btn {
+  display: inline-block;
   min-width: 108px;
-  padding: 12px 24px;
+  padding: 15.3px 6px;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
+  color: #fff;
+  background: var(--primary-color);
 }
 
 .btn.btn--text {
   color: #494949;
   font-weight: 400;
+  background: none;
   padding: 12px 20px;
 }
 
@@ -54,6 +58,7 @@ a {
 }
 
 .btn.btn--outline {
+  background: none;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -125,4 +130,175 @@ a {
 
 .navbar__actions a + a {
   margin-left: 4px;
+}
+
+/* ====== Hero ====== */
+.hero {
+  padding: 50px 0 79px;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  width: 458px;
+  padding-top: 93px;
+}
+
+.hero__content-sub-title {
+  color: #767e7e;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.hero__content-title {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.hero__content-desc {
+  width: 374px;
+  margin-top: 46px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78;
+}
+
+.hero__content-cta {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.content-cta__started {
+  min-width: 186px;
+  padding: 26px 6px;
+  border-radius: 14px;
+}
+
+.content-cta__watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  min-width: 62px;
+  height: 62px;
+  border-radius: 100%;
+  background-color: #fff;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__thumb {
+  margin-left: 71px;
+  position: relative;
+}
+
+.hero__images img {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+}
+
+.hero__thumb .card-course {
+  font-size: 1rem;
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  display: flex;
+  align-items: center;
+  padding: 1.8em 2.5em;
+  width: 15.7em;
+  height: 7.5em;
+  flex-shrink: 0;
+  border-radius: 1.8em;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.book-icon {
+  position: relative;
+  display: inline-block;
+  padding: 2.8em 0.4em 0.8em;
+  width: 3.6em;
+  height: 4em;
+  background: #ff8282;
+  border-radius: 0.2em;
+}
+
+.book-icon .book-icon__line {
+  display: block;
+  width: 2.8em;
+  height: 0.4em;
+  background-color: #fff;
+  border-radius: 0.2em;
+}
+
+.card-course__text {
+  margin-left: 1.6em;
+  width: 5.5em;
+  color: #0d1111;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hero__thumb .card-schedule {
+  position: absolute;
+  bottom: 46px;
+  left: -65px;
+  font-size: 1rem;
+  padding: 1.6em 2.6em;
+  width: 12.4em;
+  height: 13.2em;
+  border-radius: 2.4em;
+  background: #fff;
+  box-shadow: 0px 1em 8em 0px rgba(0, 0, 0, 0.05);
+}
+
+.card-schedule__text {
+  color: #0d1111;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-schedule .bar-group {
+  margin-top: 1.6em;
+}
+.card-schedule .bar-line {
+  margin: 1.2em auto 0;
+  display: block;
+  width: 7.4em;
+  height: 0.6em;
+  background-color: rgba(237, 241, 245, 1);
+  border-radius: 0.3em;
+}
+.card-schedule .bar-line span {
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(251, 152, 153, 1);
+  border-radius: 0.3em;
+}
+
+.card-schedule .bar-line:first-child span {
+  width: 53%;
+}
+
+.card-schedule .bar-line:nth-child(2) span {
+  width: 69%;
+}
+
+.card-schedule .bar-line:nth-child(3) span {
+  width: 44%;
+}
+
+.card-schedule .bar-line:last-child {
+  width: 2.6em;
 }
