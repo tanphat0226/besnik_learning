@@ -193,11 +193,16 @@ a {
   border-radius: 100%;
   background-color: #fff;
   box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.content-cta__watch img {
+  margin-left: 50%;
+  transform: translateX(-70%);
 }
 
 .content-cta__watch:hover {
   border: 1px solid var(--primary-color);
-  opacity: 0.8;
 }
 
 .hero__thumb {
