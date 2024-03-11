@@ -24,6 +24,12 @@ body {
 a {
   text-decoration: none;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 .container {
   width: 1170px;
@@ -416,4 +422,137 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.69;
+}
+
+/* Course .*/
+.courses {
+  margin-top: 40px;
+}
+.courses__header {
+  padding-top: 90px;
+}
+.courses__head {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.courses__title {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.courses__desc {
+  margin-top: 19px;
+  width: 525px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.78;
+}
+
+.courses__header .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn.courses__cta-btn {
+  color: var(--primary-color);
+  min-width: 119px;
+}
+
+.btn.courses__cta-btn:hover {
+  opacity: 0.8;
+}
+
+.courses-list {
+  margin-top: 79px;
+  display: flex;
+  gap: 47px;
+}
+
+.courses-list__course {
+  width: 359px;
+  position: relative;
+}
+
+.course__thumb {
+  width: 359px;
+  height: 393px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.35;
+  background: #d0efed;
+}
+.course__thumb:hover {
+  opacity: 1;
+}
+
+.course__body {
+  position: absolute;
+  top: 322px;
+  right: 17px;
+  left: 17px;
+  padding: 18px 25px 29px;
+  width: 325px;
+  height: 195px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course__body-title {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.course__body-price {
+  margin-top: 16px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.course__body-price strong {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.course__body-desc {
+  margin-top: 10px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.course__foot {
+  margin-top: 18px;
+  display: flex;
+}
+
+.course__foot .dot {
+  margin-right: 10px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.course__foot-text {
+  color: #9da6a5;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.course__foot-text + .course__foot-text {
+  margin-left: 10px;
 }
