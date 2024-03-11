@@ -739,9 +739,6 @@ a {
   align-items: center;
 }
 
-.contact__info {
-}
-
 .contact__body-title {
   color: #070707;
   font-size: 4.2rem;
@@ -763,6 +760,7 @@ a {
 .footer {
   margin-top: 30px;
 }
+
 .footer__row {
   display: flex;
   gap: 137px;
