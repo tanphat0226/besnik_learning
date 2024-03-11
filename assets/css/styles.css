@@ -74,6 +74,16 @@ a {
   background-color: var(--primary-color);
 }
 
+.btn.btn--large {
+  min-width: 186px;
+  padding: 26px 6px;
+  border-radius: 14px;
+}
+
+.btn.btn--large:hover {
+  opacity: 0.75;
+}
+
 /* ====== Header ====== */
 .header {
   background-color: #ffffff;
@@ -510,6 +520,10 @@ a {
   line-height: 1.5;
 }
 
+.course__body-title:hover {
+  opacity: 0.8;
+}
+
 .course__body-price {
   margin-top: 16px;
   color: #767e7e;
@@ -555,4 +569,248 @@ a {
 
 .course__foot-text + .course__foot-text {
   margin-left: 10px;
+}
+
+/* Stats */
+.stats {
+  width: 862px;
+  margin: 65px auto 0;
+}
+
+.stats__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 200px;
+}
+
+.stats__content-text strong {
+  display: block;
+  margin-bottom: 11px;
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
+.stats__content-text {
+  display: inline-block;
+  color: #767e7e;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* Feedback */
+
+.feedback {
+  margin-top: 65px;
+}
+.feedback__content {
+  display: flex;
+  padding-top: 200px;
+}
+
+.fb-info {
+  width: 419px;
+  margin-right: 72px;
+}
+
+.fb-info__text {
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.fb-info__user {
+  position: relative;
+  margin-top: 33px;
+  margin-left: 13px;
+}
+.fb-info__user::before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+}
+
+.fb-info__user-name {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.fb-info__user-role {
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.fb-actions {
+  margin-top: 52px;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fb-actions__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #2ac9bf;
+}
+
+.fb-actions__btn:hover {
+  opacity: 0.75;
+}
+
+.fb__images {
+  position: relative;
+  width: 679px;
+}
+.fb__image {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.fb__image:first-child {
+  top: 258px;
+  left: 0;
+  width: 78px;
+  height: 78px;
+}
+
+.fb__image:nth-child(2) {
+  top: 0;
+  left: 144px;
+  width: 92px;
+  height: 92px;
+}
+
+.fb__image:nth-child(3) {
+  bottom: 0;
+  left: 212px;
+  width: 78px;
+  height: 78px;
+}
+
+.fb__image:nth-child(4) {
+  top: 107px;
+  right: 171px;
+  bottom: 130px;
+  width: 235px;
+  height: 235px;
+}
+
+.fb__image:nth-child(5) {
+  top: 19px;
+  right: 0;
+  width: 110px;
+  height: 110px;
+}
+
+.fb__image:last-child {
+  right: 0;
+  bottom: 29px;
+  width: 78px;
+  height: 78px;
+}
+
+/* Contact */
+.contact {
+  background-color: #def6f5;
+  margin-top: 130px;
+  padding: 76px 0 88px;
+}
+
+.contact__body {
+  display: flex;
+  align-items: center;
+}
+
+.contact__info {
+}
+
+.contact__body-title {
+  color: #070707;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.contact__body-desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.contact__actions {
+  margin-right: 154px;
+  margin-left: auto;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+}
+.footer__row {
+  display: flex;
+  gap: 137px;
+  padding: 100px 0 30px;
+}
+
+.footer__heading {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.footer__column-list {
+  margin-top: 26px;
+}
+
+.footer__list-item {
+  margin-top: 18px;
+}
+
+.footer__list-item:first-child {
+  margin-top: 0;
+}
+
+.footer__list-item-link {
+  display: inline-flex;
+  align-items: center;
+
+  color: #535353;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.footer__list-item-link:hover {
+  opacity: 0.8;
+}
+
+.footer__list-item-link img {
+  margin-right: 9px;
+}
+
+.footer__copyright {
+  padding: 50px 0;
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
