@@ -475,6 +475,7 @@ a {
 
 .btn.courses__cta-btn:hover {
   opacity: 0.8;
+  text-decoration: underline;
 }
 
 .courses-list {
@@ -493,7 +494,7 @@ a {
   height: 393px;
   object-fit: cover;
   border-radius: 8px;
-  opacity: 0.35;
+  opacity: 0.7;
   background: #d0efed;
 }
 .course__thumb:hover {
