@@ -92,12 +92,25 @@
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <header class="header fixed">
       <div class="container">
         <div class="header__body">
-          <a href="#">
+          <label for="menu-mobile" class="mobile-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="currentColor"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
+
+          <a href="#" class="navbar__logo-link">
             <img
               src="./assets/img/Logo.png"
               alt="Besnik."
@@ -105,7 +118,7 @@
             />
           </a>
           <nav class="header__navbar">
-            <ul class="navbar__menu">
+            <ul class="navbar__menu" id="pc-navbar">
               <li class="navbar__menu-item active">
                 <a href="#" title="Home">Home</a>
               </li>
@@ -121,6 +134,12 @@
               <li class="navbar__menu-item">
                 <a href="#contact" title="Contact">Contact</a>
               </li>
+              <li class="navbar__menu-item show-on-mobile separate">
+                <a href="#contact" title="Contact">Sign in</a>
+              </li>
+              <li class="navbar__menu-item show-on-mobile">
+                <a href="#contact" title="Contact">Sign Up</a>
+              </li>
             </ul>
           </nav>
           <section class="navbar__actions">
@@ -128,6 +147,23 @@
             <a href="#!" class="btn btn--outline">Sign up</a>
           </section>
         </div>
+      </div>
+    </header>
+
+    <header class="mobile-menu">
+      <input type="checkbox" id="menu-mobile" class="menu-checked" hidden />
+      <label for="menu-mobile" class="menu-overlay"></label>
+      <div class="menu-container">
+        <a href="#">
+          <img src="./assets/img/Logo.png" alt="Besnik." class="navbar__logo" />
+        </a>
+        <ul id="mobile-navbar"></ul>
+        <script>
+          const pcNavbar = document.getElementById("pc-navbar");
+          const mobileNavbar = document.getElementById("mobile-navbar");
+
+          mobileNavbar.innerHTML = pcNavbar.innerHTML;
+        </script>
       </div>
     </header>
     <main>

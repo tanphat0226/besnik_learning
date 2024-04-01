@@ -94,7 +94,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .header__body {
@@ -345,19 +345,19 @@ a {
 
 .card-students__text {
   color: #0d1111;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 500;
 }
 
 .card-students__avatar-group {
   display: flex;
-  margin-top: 8px;
+  margin-top: 0.8em;
 }
 
 .card-students__avatar-group span,
 .card-students__avatar-group img {
-  min-width: 3.3em;
-  min-height: 3.3em;
+  width: 3.3em;
+  height: 3.3em;
   border-radius: 50%;
 }
 
@@ -372,7 +372,7 @@ a {
   justify-content: center;
   background: var(--primary-color);
   color: #fff;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 500;
 }
 

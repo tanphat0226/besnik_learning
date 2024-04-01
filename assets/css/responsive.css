@@ -1,0 +1,136 @@
+/* PC */
+@media (min-width: 992px) {
+  .mobile-menu,
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 991.98px) {
+  .header__body {
+    position: relative;
+  }
+
+  .header__navbar {
+    display: none;
+  }
+
+  .mobile-menu {
+    width: 24px;
+    color: #0d1111;
+  }
+
+  .navbar__logo-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-container {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background-color: #fff;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    padding: 60px;
+  }
+
+  .menu-checked:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checked:checked ~ .menu-container {
+    transform: translateX(0);
+  }
+
+  #mobile-navbar {
+    margin-top: 10px;
+  }
+
+  #mobile-navbar a {
+    display: block;
+    padding: 18px 0;
+  }
+
+  .separate {
+    border-top: 1px solid #e2edff;
+  }
+
+  .hero__images img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .courses__title,
+  .features__title {
+    font-size: 3rem;
+  }
+
+  .courses__desc,
+  .features__desc {
+    font-size: 1.4rem;
+  }
+
+  .feat-list__item + .feat-list__item {
+    margin-left: 100px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .show-on-mobile {
+    display: none;
+  }
+
+  .hero__content {
+    padding: 0;
+  }
+
+  .hero__content-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .hero__content-title {
+    font-size: 4.2rem;
+  }
+
+  .hero__content-desc {
+    margin-top: 26px;
+    font-size: 1.5rem;
+  }
+
+  .hero__thumb .card-course {
+    top: 49px;
+  }
+
+  .card-students,
+  .hero__thumb .card-course,
+  .hero__thumb .card-schedule {
+    font-size: 0.7rem;
+  }
+
+  .card-students {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .menu-container {
+    padding: 40px;
+  }
+}
