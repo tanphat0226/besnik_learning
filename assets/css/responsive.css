@@ -1,5 +1,6 @@
 /* PC */
 @media (min-width: 992px) {
+  .course-btn-mobile,
   .mobile-menu,
   .show-on-mobile {
     display: none;
@@ -84,8 +85,53 @@
     font-size: 1.4rem;
   }
 
+  .courses__desc {
+    width: 100%;
+  }
+
   .feat-list__item + .feat-list__item {
     margin-left: 100px;
+  }
+
+  .btn.btn--large {
+    padding: 19px 0;
+  }
+
+  .content-cta__watch {
+    min-width: 52px;
+    height: 52px;
+  }
+
+  .features__head {
+    padding-top: 40px;
+  }
+
+  .btn.courses__cta-btn {
+    display: none;
+  }
+
+  .courses-action {
+    margin-top: 154px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .stats {
+    width: 100%;
+    margin: 0;
+  }
+
+  .feedback__content,
+  .stats__content {
+    padding-top: 100px;
+  }
+
+  .stats__content-text strong {
+    font-size: 5rem;
+  }
+
+  .stats__content-text {
+    font-size: 1.6rem;
   }
 }
 
@@ -104,7 +150,7 @@
   }
 
   .hero__content-title {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 
   .hero__content-desc {
@@ -126,11 +172,127 @@
     right: 30px;
     bottom: 30px;
   }
+
+  .courses-list {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 154px 30px;
+  }
+  .fb-info {
+    margin: 0;
+  }
+  .fb__images {
+    width: 50%;
+    margin-left: 50px;
+  }
+
+  .fb__image:nth-child(5) {
+    top: 108px;
+  }
+
+  .fb__image:last-child {
+    display: none;
+  }
+
+  .footer__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
   .menu-container {
     padding: 40px;
+    inset: 0 20% 0 0;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .hero-inner {
+    display: block;
+  }
+
+  .hero__content {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero__content-title {
+    font-size: 4rem;
+  }
+
+  .hero__content-desc {
+    width: 100%;
+    margin-top: 0;
+    font-size: 1.4rem;
+    padding-top: 30px;
+  }
+
+  .hero__content-cta {
+    justify-content: center;
+  }
+
+  .features__desc,
+  .features__title {
+    width: 100%;
+  }
+
+  .features__feat-list {
+    flex-wrap: wrap;
+  }
+
+  .feat-list__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .feat-list__item + .feat-list__item {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .courses-list {
+    grid-template-columns: 1fr;
+    row-gap: 154px;
+  }
+
+  .stats__content {
+    flex-wrap: wrap;
+    font-size: 4rem;
+  }
+
+  .stats__content-text {
+    width: 100%;
+  }
+
+  .stats__content-text + .stats__content-text {
+    margin-top: 30px;
+  }
+
+  .fb-info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .fb__images {
+    display: none;
+  }
+
+  .footer__row,
+  .contact__body {
+    flex-direction: column;
+  }
+
+  .contact__actions {
+    margin-top: 18px;
+  }
+
+  .footer__row {
+    gap: 70px;
   }
 }
