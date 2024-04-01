@@ -133,6 +133,10 @@
   .stats__content-text {
     font-size: 1.6rem;
   }
+
+  .course__body {
+    width: 95%;
+  }
 }
 
 /* Tablet */
